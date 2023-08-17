@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+.list {
+  margin: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: 60px;
+  grid-gap: 14px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list-string {
+  margin: 10px 16px 0 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  padding: 6px;
   color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
 }
 
-.App-link {
-  color: #61dafb;
+.list-item-selected {
+  border: solid 2px red;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom,
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0.7)));
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-item-navy {
+  background-color: #001f3f;
+}
+
+.list-item-blue {
+  background-color: #0074d9;
+}
+
+.list-item-aqua {
+  background-color: #7fdbff;
+}
+
+.list-item-teal {
+  background-color: #39cccc;
+}
+
+.list-item-olive {
+  background-color: #3d9970;
+}
+
+.list-item-green {
+  background-color: #2ecc40;
+}
+
+.list-item-lime {
+  background-color: #01ff70;
+}
+
+.list-item-yellow {
+  background-color: #ffdc00;
+}
+
+.list-item-orange {
+  background-color: #ff851b;
+}
+
+.list-item-red {
+  background-color: #ff4136;
+}
+
+.list-item-maroon {
+  background-color: #85144b;
+}
+
+.list-item-fuchsia {
+  background-color: #f012be;
+}
+
+.list-item-purple {
+  background-color: #b10dc9;
+}
+
+.list-item-black {
+  background-color: #111111;
+}
+
+.list-item-gray {
+  background-color: #aaaaaa;
+}
+
+.list-item-silver {
+  background-color: #dddddd;
 }
